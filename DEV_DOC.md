@@ -83,11 +83,11 @@ Data is stored on the host (persists across reboots):
 ## Logging into MariaDB
 
 ```bash
-# From host
-docker exec -it mariadb mariadb -u wp_user -pmacarrones_con_tomate wordpress
+# Log in with the WordPress database user (reads DB_PASSWORD from .env)
+docker exec -it mariadb mariadb -u wp_user -p wordpress
 
-# Check database is not empty
-docker exec -it mariadb mariadb -u root -ppizza_margarita -e "SHOW DATABASES; USE wordpress; SHOW TABLES;"
+# Check that the database is not empty as root (reads DB_ROOT_PASSWORD from .env)
+docker exec -it mariadb mariadb -u root -p -e "SHOW DATABASES; USE wordpress; SHOW TABLES;"
 ```
 
 ## TLS Certificate

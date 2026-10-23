@@ -24,15 +24,15 @@ Open: **https://smikhail.42.fr**
 
 URL: **https://smikhail.42.fr/wp-admin**
 
-- Username: `smikhail_boss`
-- Password: `pizza_margarita` (defined in `srcs/.env` as `WP_ADMIN_PASSWORD`)
+- Username: configured in `srcs/.env` as `WP_ADMIN_USER` (e.g. `smikhail_boss`)
+- Password: configured in `srcs/.env` as `WP_ADMIN_PASSWORD`
 
 ## WordPress Normal User (for comments)
 
 URL: **https://smikhail.42.fr**
 
-- Username: `smikhail_user`
-- Password: `macarrones_con_tomate` (defined in `srcs/.env` as `WP_USER_PASSWORD`)
+- Username: configured in `srcs/.env` as `WP_USER` (e.g. `smikhail_user`)
+- Password: configured in `srcs/.env` as `WP_USER_PASSWORD`
 
 ## Managing Credentials
 
